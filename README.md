@@ -13,7 +13,8 @@ python2 ib2py.py > sortie.txt
 
 Signification des colonnes
 
-ratio_neuf       Colonne la plus interessante. Ratio des ventes (neuf) sur la quantite en atelier
+ratio_neuf       Colonne la plus interessante. 
+		 Ratio des ventes (neuf) sur la quantite en atelier
 ventes_neuf      Quantite venue neuf
 ventes_usage	 Quantite venue usage
 quantite_neuf	 Quantite en inventaire neuf
