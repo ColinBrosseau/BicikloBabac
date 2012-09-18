@@ -25,15 +25,12 @@ max_item = 9450
 import sys
 import datetime
 
-from matplotlib.dates import YearLocator, MonthLocator, WeekdayLocator, DateFormatter
-from matplotlib.dates import epoch2num, date2num, num2date
 
 import xlrd #pour lire le fichier excel
 import xlwt #pour ecrire dans le fichier excel
 import xlutils.copy
 
 import numpy as np
-import matplotlib.pyplot as plt #pour les graphiques
 
 #represente un objet de l'atelier
 class item(object):
@@ -143,6 +140,10 @@ def classe_caisse(c0,c8):
     return n1
     
 def plot_item(n,d,item=100):
+    from matplotlib.dates import YearLocator, MonthLocator, WeekdayLocator, DateFormatter
+    from matplotlib.dates import epoch2num, date2num, num2date
+    import matplotlib.pyplot as plt #pour les graphiques
+
     hist = list(n[:,item])
     bin_edges = np.empty(12+1)
     for i in range(0,12):
