@@ -1,6 +1,16 @@
 Biciklo
 =======
 
+Lecture du site web de Babac pour extraire les informations pertinentes
+
+Ne fonctionne pas sur Python 3
+
+Usage typique
+
+python2 babac2biciklo.py > sortie.txt
+
+-----
+
 Traitement des ventes pour Biciklo
 
 Lit le fichier d'inventaire de Biciklo (.xls) et sort les plus gros vendeurs/ce dont on aurait besoin d'acheter.
